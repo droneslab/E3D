@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="Empir3D">
+  <meta property="og:title" content="Empir3D"/>
+  <meta property="og:description" content="SOCIAL MEDMulti-Dimensional Point Cloud Quality Assessment"/>
+  <meta property="og:url" content="https://droneslab.github.io/E3D"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="Empir3D">
+  <meta name="twitter:description" content="Multi-Dimensional Point Cloud Quality Assessment">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Empir3D: Multi-Dimensional Point Cloud Quality Assessment </title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title"><span style="color: rgb(0, 45, 248)">Empir3D</span>: Multi-Dimensional Point Cloud Quality Assessment</h1>
+            <!-- <h1 style="font-size:1.5rem">European Conference on Computer Vision (ECCV) 2024</h1> -->
+
+            <!-- <h1 style="font-size:1.5rem">ECCV 2024<br>(European Conference on Computer Vision)<br></h1> -->
+
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://yash.turkar.in/" target="_blank">Yash Turkar</a>,</span>
+                <span class="author-block">
+                  <a href="https://pranayspeed.com" target="_blank">Pranay Meshram</a>,</span>
+                <span class="author-block">
+                  <a href="https://christoaluckal.com" target="_blank">Christo Aluckal</a>,</span>
+                <span class="author-block">
+                  <a target="_blank">Charuvahan Adhivarahan</a>,</span>
+                <span class="author-block">
+                  <a href="https://cse.buffalo.edu/faculty/kdantu/" target="_blank">Karthik Dantu</a></span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Center for Embodied Autonomy and Robotics (CEAR) <br> University at Buffalo</span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <a href="https://www.buffalo.edu/">
+                      <img style="width:30%; padding-right: 15px;" src="static/images/ub_logo.png">
+                    </a>
+                    <!-- <a href="https://eccv2024.ecva.net/">
+                      <img style="width:30%; height: 30%; padding-right: 15px;" src="static/images/eccv_logo.png">
+                    </a> -->
+                    <a href="http://drones.cse.buffalo.edu/">
+                      <img style="width:30%; height:auto; padding-bottom: 25px;" src="static/images/drones_logo.png">
+                    </a>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper (Coming Soon)</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary (Coming Soon)</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/droneslab/E3D/"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+
+              <span class="link-block">
+                <a href="https://github.com/droneslab/E3D/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fa fa-database"></i>
+                  </span>
+                  <span>E3D Dataset</span>
+                  </a>
+
+              <div class="content has-text-justified">
+                <img style="width:100%;" src="static/images/Pallet_Wide_v2.pdf">
+                <p>
+                  Degradations on a sample point cloud (evaluated against original); Left to right: point cloud is, down-sampled, noise is added, cropped and artifacts added. Zoomed-in view below degraded point cloud, and the corresponding Empir3D metric reflects the degradation. Qr, Qa, Qc, Qt is resolution, accuracy, coverage, and artifact score respectively and Dc and Dh are Chamfer and Hausdorff distances
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- <section class="section hero"></section>
+  <div class="container is-max-desktop">
+    <iframe height="540" width="960" src="https://www.youtube.com/embed/EOGI1pU1G40" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+</section> -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Advancements in sensors, algorithms and compute hardware has made 3D perception feasible in real-time. Current methods to compare and evaluate quality of a 3D model such as Chamfer, Hausdorff and Earth-mover’s distance are uni- dimensional and have limitations; including inability to capture coverage, local variations in density and error, and are significantly affected by outliers. In this paper, we propose an evaluation framework for point clouds (Empir3D) that consists of four metrics - resolution (Qr) to quantify ability to distinguish between the individual parts in the point cloud, accuracy (Qa) to measure registration error, coverage (Qc) to evaluate portion of missing data, and artifact-score (Qt) to characterize the presence of artifacts. Through detailed analysis, we demonstrate the complementary nature of each of these dimensions, and the improvement they provide compared to uni-dimensional measures highlighted above. Further, we demonstrate the utility of Empir3D by comparing our metric with the uni-dimensional metrics for two 3D perception applications (SLAM and point cloud completion). We believe that Empir3D advances our ability to reason between point clouds and helps better debug 3D perception applications by providing richer evaluation of their performance. Our implementation of Empir3D, custom real- world datasets, evaluation on learning methods, and detailed documentation on how to integrate the pipeline will be made available upon publication.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Youtube video -->
+<!-- <section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video Presentation</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/EOGI1pU1G40" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End youtube video -->
+
+<!-- Method -->
+<!-- <section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column"><h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+          <p>
+
+            MARs embeds attention information into height and width-disparate similarty spaces, driving the <strong><em>what</em></strong>
+            and <strong><em>where</em></strong> of multi-view attention focus together while avoiding the trivial solution (e.g., both 
+            attention maps are zero everywhere).
+          </p>
+          <img style="width:100%;" src="static/images/arch.png">
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End Method -->
+
+<!-- <style>
+  .result-caption {
+    font-size: 20px;
+  }
+</style> -->
+
+<!-- Luna-1 -->
+<!-- <section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column"><h2 class="title is-3">The Luna-1 Dataset</h2>
+        <div class="content has-text-justified">
+          <p>
+            To facilitate future research in the challenging space landmark recognition problem, we introduce the <strong><em>Luna-1</em></strong>
+            dataset, consisting of 5,067 Moon crater landmarks and 2,161 emulated orbital navigation frames from real-world 
+            NASA data.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+            <img style="width:49%; padding-right: 15px;" src="static/images/craters.png"/>
+            <img style="width:49%; padding-right: 15px; padding-bottom: 2px;" src="static/images/nav_frames.png"/> 
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End Luna-1 -->
+
+<!-- Results -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column"><h2 class="title is-3">Results</h2>
+        <div class="content has-text-justified">
+          
+          <img style="width:100%;" src="static/images/Warehouse-Suppl2.pdf">
+          <h6>
+            Evaluation on Warehouse dataset (simulated); (a),(b),(c),(d) show point clouds ground truth, LeGO-LOAM, FAST-LIO2 and SHINE. (d) exhibits highest Qc,Qa,Qa as shown in zoomed-in view but contains artifacts (lower Qt compared to (c)). Empir3D accurately quantifies all aspects of quality while Dc and Dh identify (c) and (d) as the most similar
+          </h6>
+          
+          <img style="width:100%;" src="static/images/suppl_learning_detailed.pdf">
+          <h6>
+            Evaluation on point cloud completion, Lamp from MVP reconstructed using PCN, TOPNET, ECG. ECG generates highest quality point clouds which is confirmed by Empir3D metrics while Dc and Dh identify PCN despite presence of artifacts and poor reconstruction.
+          </h6>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Results -->
+
+<!-- Compute -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column"><h2 class="title is-3">Compute Performance</h2>
+        <div class="content has-text-justified">
+          <p>
+            Comparative analysis of memory, CPU utilization and computation time across different region sizes (r) and number of processor cores. Memory utilization remains relatively constant across various core counts, whereas CPU utilization increases with more cores, especially for smaller region sizes before decreasing again when regions become too large for multi-threading. Computation time decreases significantly with the increase in region size up to a certain point, beyond which the benefits plateau, as shown in the benchmarks for 1, 2, 4, and 8 core computation of Empir3D, compared to the baseline single-threaded implementations Dc and Dh.
+          </p>
+          <img style="width:100%;" src="static/images/Compute-Plots-RSS2.pdf">
+          <!-- <p>
+
+
+          </p>
+          <img style="width:100%;" src="static/images/empir3d_metrics.png"> -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Results -->
+
+
+<!-- <section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column"><h2 class="title is-3">Training Evolution</h2>
+        <div class="content has-text-centered">
+            <video poster="" id="video1" autoplay controls muted loop height="100%" style="padding-right: 15px;">
+              <source src="static/videos/mars.mp4" type="video/mp4">
+            </video>
+            <video poster="" id="video2" autoplay controls muted loop height="100%" style="padding-right: 15px;">
+              <source src="static/videos/moon.mp4" type="video/mp4">
+            </video>
+            <video poster="" id="video2" autoplay controls muted loop height="100%">
+              <source src="static/videos/earth.mp4" type="video/mp4">
+            </video>
+            <h6>
+              Attention alignment evolution during training for MARs (bottom row) against rotational equivarant and spatial attention layers (RIC CA, top row)
+              for Mars Crater (left), Moon Crater (middle), and Earth Stadium (right) features.
+            </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+
+
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/mars.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <source src="static/videos/moon.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <source src="static/videos/earth.mp4" type="video/mp4">
+          </video>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+
+<!-- Video carousel -->
+<!-- <div id="wrapper"> 
+  <video id="home1" width="400" height="300" poster="" controls="controls" preload="none"> 
+      <source type="video/mp4" src="static/videos/mars.mp4" /> 
+  </video>
+  <video id="home2" width="400" height="300" poster="" controls="controls" preload="none"> 
+      <source type="video/mp4" src="static/videos/moon.mp4" /> 
+  </video>
+  <div class="clear"></div> 
+</div> -->
+<!-- End video carousel -->
+
+
+
+<!-- Poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container has-text-centered"><h2 class="title">Poster</h2>
+      <iframe  src="static/pdfs/eccv_poster_final.pdf" width="100%" height="600"></iframe>
+
+    </div>
+  </div>
+</section> -->
+<!-- End Poster -->
+
+
+
+
+
+
+
+<!-- <section class="hero is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/eccv_poster_final.pdf" width="100%" height="600">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+
+  <!-- <embed src="static/pdfs/eccv_poster_final.pdf" style="height:100%;" type="application/pdf"> -->
+
+
+
+<!-- Image carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item"> -->
+        <!-- Your image here -->
+        <!-- <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          First image description.
+        </h2>
+      </div>
+      <div class="item"> -->
+        <!-- Your image here -->
+        <!-- <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Second image description.
+        </h2>
+      </div>
+      <div class="item"> -->
+        <!-- Your image here -->
+        <!-- <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+         Third image description.
+       </h2>
+     </div>
+     <div class="item"> -->
+      <!-- Your image here -->
+      <!-- <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Fourth image description.
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section> -->
+<!-- End image carousel -->
+
+
+
+<!-- Video carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%"> -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%"> -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/carousel2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\ -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/carousel3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End video carousel -->
+
+
+
+<!-- Youtube video -->
+<!-- <section class="hero is-small is-light"></section>
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">          
+          <div class="publication-video">
+            <iframe height="540" width="960" src="https://www.youtube.com/embed/EOGI1pU1G40" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/eccv_poster_final.pdf" width="100%" height="600">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+<!--End paper poster -->
+
+<!--BibTex citation -->
+<section class="section hero"></section>
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column"><h4 class="title is-3">BibTeX</h4>
+        <div class="content has-text-justified">
+          <pre><code>@inproceedings{chase2024mars,
+            title={MARs: Multi-view Attention Regularizations for Patch-based Feature Recognition of Space Terrain},
+            author={Timothy Chase Jr and Karthik Dantu},
+            year={2024},
+            booktitle={ECCV},
+          }</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
+<!--End BibTex citation -->
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+<!-- End of Statcounter Code -->
+
+  </body>
+  </html>
