@@ -143,7 +143,7 @@
                   </a>
 
               <div class="content has-text-justified">
-                <img style="width:100%;" src="static/images/Pallet_Wide_v2.pdf">
+                <img style="width:100%;" src="static/images/Pallet_Wide_v2.png">
                 <p>
                   Degradations on a sample point cloud (evaluated against original); Left to right: point cloud is, down-sampled, noise is added, cropped and artifacts added. Zoomed-in view below degraded point cloud, and the corresponding Empir3D metric reflects the degradation. Qr, Qa, Qc, Qt is resolution, accuracy, coverage, and artifact score respectively and Dc and Dh are Chamfer and Hausdorff distances
                 </p>
@@ -251,12 +251,12 @@
       <div class="column"><h2 class="title is-3">Results</h2>
         <div class="content has-text-justified">
           
-          <img style="width:100%;" src="static/images/Warehouse-Suppl2.pdf">
+          <img style="width:100%;" src="static/images/Warehouse-Suppl2.png">
           <h6>
             Evaluation on Warehouse dataset (simulated); (a),(b),(c),(d) show point clouds ground truth, LeGO-LOAM, FAST-LIO2 and SHINE. (d) exhibits highest Qc,Qa,Qa as shown in zoomed-in view but contains artifacts (lower Qt compared to (c)). Empir3D accurately quantifies all aspects of quality while Dc and Dh identify (c) and (d) as the most similar
           </h6>
           
-          <img style="width:100%;" src="static/images/suppl_learning_detailed.pdf">
+          <img style="width:100%;" src="static/images/suppl_learning_detailed.png">
           <h6>
             Evaluation on point cloud completion, Lamp from MVP reconstructed using PCN, TOPNET, ECG. ECG generates highest quality point clouds which is confirmed by Empir3D metrics while Dc and Dh identify PCN despite presence of artifacts and poor reconstruction.
           </h6>
@@ -277,7 +277,7 @@
           <p>
             Comparative analysis of memory, CPU utilization and computation time across different region sizes (r) and number of processor cores. Memory utilization remains relatively constant across various core counts, whereas CPU utilization increases with more cores, especially for smaller region sizes before decreasing again when regions become too large for multi-threading. Computation time decreases significantly with the increase in region size up to a certain point, beyond which the benefits plateau, as shown in the benchmarks for 1, 2, 4, and 8 core computation of Empir3D, compared to the baseline single-threaded implementations Dc and Dh.
           </p>
-          <img style="width:100%;" src="static/images/Compute-Plots-RSS2.pdf">
+          <img style="width:100%;" src="static/images/Compute-Plots-RSS2.png">
           <!-- <p>
 
 
@@ -314,7 +314,7 @@
           <p>
             We introduce <emph>Davis</emph>, an indoor dataset for evaluating point cloud quality assessment algorithms. We capture ground truth poses using a Robotic Total-Station [47] which is essentially a theodolite with an integrated distance meter that can measure distances and angles. This enables extremely precise pose estimation (millimeter-level) and is widely used in infrastructure and geospatial surveying [48], [49]. Second, we capture LiDAR scans at the exact locations where poses are measured. This is achieved by placing a LiDAR mounted on a custom tripod, the tripod is equipped with a nadir pointed laser that projects a cross-hair onto carefully placed markers on the ground to align scans. For the Davis dataset, over 400 poses and corresponding scans were captured with this method. Finally, the scans are stitched into a dense point cloud of the environment with the recorded poses providing initial alignment. ICP was used for fine registration.
           </p>
-          <img style="width:100%;" src="static/images/Illuminati-gt-pose-map.pdf">
+          <img style="width:100%;" src="static/images/Illuminati-gt-pose-map.png">
           <!-- <p>
 
 
